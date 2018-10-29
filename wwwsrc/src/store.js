@@ -19,7 +19,7 @@ Vue.use(Vuex)
 // })
 
 let leagueApi = Axios.create({
-  baseURL: 'http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/'
+  baseURL: 'http://ddragon.leagueoflegends.com/cdn/8.21.1/data/en_US/'
 })
 //profileicon.json 
 //champion.json 
@@ -47,7 +47,7 @@ export default new Vuex.Store({
   },
   actions: {
     getChamps({ commit, dispatch }) {
-      leagueApi.get('')
+      leagueApi.get('rune.json')
         .then(res => {
           commit('setChampions', res.data)
         })
