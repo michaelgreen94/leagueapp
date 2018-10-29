@@ -24,4 +24,10 @@ export default {
   }
 };
 </script>
+<style>
+* {
+  border: 1 px solid black;
+}
+</style>
+
 
