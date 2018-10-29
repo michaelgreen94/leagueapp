@@ -1,7 +1,7 @@
 <template>
   <div class="champions">
-    <div v-for="champion in champions" :key="champion._id" class="champ">
-      {{champion.name}}
+    <div v-for="champion in champions.data" :key="champion.id" class="champ">
+      {{champion.image.full}}
     </div>
   </div>
 </template>

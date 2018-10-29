@@ -29,6 +29,10 @@ let leagueApi = Axios.create({
 //rune.json
 //summoner.json 
 
+let imgApi = Axios.create({
+  baseURL: 'http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Aatrox.png'
+})
+//send champion name with .png to get splash art
 
 
 export default new Vuex.Store({
@@ -47,7 +51,7 @@ export default new Vuex.Store({
   },
   actions: {
     getChamps({ commit, dispatch }) {
-      leagueApi.get('rune.json')
+      leagueApi.get('champion.json')
         .then(res => {
           commit('setChampions', res.data)
         })
