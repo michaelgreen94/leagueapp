@@ -4,6 +4,7 @@
     <results/>
     <champions/>
     <welcome/>
+    <button @click="randomRoll()">Roll</button>
   </div>
 </template>
 
