@@ -18,6 +18,11 @@ export default {
     Champions,
     Welcome,
     Results
+  },
+  methods: {
+    randomRoll() {
+      this.$store.dispatch("randomRoll");
+    }
   }
 };
 </script>

@@ -47,6 +47,9 @@ export default new Vuex.Store({
   mutations: {
     setChampions(state, data) {
       state.champions = data
+    },
+    setItems(state, data) {
+      state.items = data
     }
   },
   actions: {
@@ -58,6 +61,12 @@ export default new Vuex.Store({
     },
     getImgs({ commit, dispatch }, payload) {
       imgApi.get('')
+    },
+    randomRoll({ commit, dispatch }) {
+      leagueApi.get('item.json')
+        .then(res => {
+          commit('setItems', res.data)
+        })
     }
   }
 })
