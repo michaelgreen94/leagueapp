@@ -29,14 +29,27 @@ export default {
 
 <style>
 * {
-  border: 1 px solid black;
+  border: 1px solid black;
+}
+
+.home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
 .results {
   color: red;
+  height: 50%;
+  width: 50%;
 }
 
 .champions {
   color: blue;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 50%;
+  width: 50%;
 }
 </style>
