@@ -26,7 +26,6 @@ export default {
 </script>
 <style>
 .champ {
-  position: relative;
   cursor: pointer;
   /* margin-left: auto;
   margin-right: auto; */
@@ -41,6 +40,8 @@ export default {
 .champions {
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
+  height: 90vh;
 }
 </style>
 

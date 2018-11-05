@@ -6,7 +6,7 @@
     <champions/>
     </div>
     <welcome/>
-    <button @click="randomRoll()">Roll</button>
+    <button class="roll" @click="randomRoll()">Roll</button>
   </div>
 </template>
 
@@ -52,6 +52,5 @@ export default {
   margin: 0 auto;
   font-size: 0;
   text-align: center;
-  overflow: scroll;
 }
 </style>
