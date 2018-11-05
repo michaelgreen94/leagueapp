@@ -49,6 +49,7 @@ export default {
 .champions-container {
   width: 40%;
   margin: 0 auto;
+  font-size: 0;
   text-align: center;
 }
 </style>

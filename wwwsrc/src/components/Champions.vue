@@ -1,7 +1,7 @@
 <template>
   <div class="champions">
     <div v-for="champion in champions.data" :key="champion.id" class="champ">
-      {{champion.image.full}}
+      <!-- {{champion.image.full}} -->
     </div>
   </div>
 </template>
@@ -28,8 +28,13 @@ export default {
 .champ {
   position: relative;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-image: url(../assets/logo.png);
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
 }
 
 .champions {
