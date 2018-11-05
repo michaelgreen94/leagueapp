@@ -1,7 +1,7 @@
 <template>
   <div class="champions">
     <div v-for="champion in champions.data" :key="champion.id" class="champ">
-      <img :src="`http://ddragon.leagueoflegends.com/cdn/8.21.1/img/champion/${champion.image.full}`" alt="">
+      <img class="champimg" :src="`http://ddragon.leagueoflegends.com/cdn/8.21.1/img/champion/${champion.image.full}`" alt="">
     </div>
   </div>
 </template>
@@ -27,14 +27,16 @@ export default {
 <style>
 .champ {
   cursor: pointer;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* background-image: url(../assets/logo.png); */
-  background-position: center;
-  background-size: cover;
   height: 6rem;
   width: 6rem;
   break-inside: avoid;
+}
+
+.champimg {
+  height: 100%;
+  width: 100%;
+  object-position: 50% 50%;
+  object-fit: cover;
 }
 
 .champions {
