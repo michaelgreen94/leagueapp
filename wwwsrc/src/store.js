@@ -29,9 +29,9 @@ let leagueApi = Axios.create({
 //rune.json
 //summoner.json 
 
-let imgApi = Axios.create({
-  baseURL: 'http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/'
-})
+// let imgApi = Axios.create({
+//   baseURL: 'http://ddragon.leagueoflegends.com/cdn/8.21.1/img/champion/'
+// })
 //send champion name with .png to get splash art
 
 
@@ -59,9 +59,12 @@ export default new Vuex.Store({
           commit('setChampions', res.data)
         })
     },
-    getImgs({ commit, dispatch }, payload) {
-      imgApi.get('')
-    },
+    // getImgs({ commit, dispatch }, payload) {
+    //   imgApi.get(payload)
+    //   .then(res => {
+    //     commit('champImgs', res.data)
+    //   })
+    // },
     randomRoll({ commit, dispatch }) {
       leagueApi.get('item.json')
         .then(res => {
