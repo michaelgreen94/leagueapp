@@ -37,7 +37,8 @@ export default {
 .home {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
+  flex-wrap: wrap;
 }
 
 .results {
@@ -51,5 +52,6 @@ export default {
   margin: 0 auto;
   font-size: 0;
   text-align: center;
+  overflow: scroll;
 }
 </style>
