@@ -25,8 +25,22 @@ export default {
 };
 </script>
 <style>
-* {
-  border: 1 px solid black;
+.champ {
+  position: relative;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.champions {
+  color: blue;
+  column-count: 6;
+  -moz-column-count: 6;
+  -webkit-column-count: 6;
+  column-gap: 0;
+  -moz-column-gap: 0;
+  -webkit-column-gap: 0;
+  padding-bottom: 10rem;
 }
 </style>
 

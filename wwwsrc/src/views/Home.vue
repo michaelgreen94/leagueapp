@@ -2,7 +2,9 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <results/>
+    <div class="champions-container">
     <champions/>
+    </div>
     <welcome/>
     <button @click="randomRoll()">Roll</button>
   </div>
@@ -41,15 +43,12 @@ export default {
 .results {
   color: red;
   height: 50%;
-  width: 50%;
+  width: 60%;
 }
 
-.champions {
-  color: blue;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  height: 50%;
-  width: 50%;
+.champions-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
 }
 </style>
