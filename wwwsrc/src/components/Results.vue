@@ -1,6 +1,8 @@
 <template>
   <div class="results">
-    <h1>hello</h1>
+    <h1>"Random Name xD"</h1>
+    <div class="champimg"></div>
+
   </div>
 </template>
 
