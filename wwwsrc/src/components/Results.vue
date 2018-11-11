@@ -1,7 +1,7 @@
 <template>
   <div class="results">
     <h1>"Random Name xD"</h1>
-    <div class="champimg"></div>
+    <img src="" alt="" class="randomimg">
 
   </div>
 </template>
